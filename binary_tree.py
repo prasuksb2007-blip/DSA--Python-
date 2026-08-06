@@ -8,10 +8,24 @@ class Node:
         val=input("Enter the value for node:")
         if val=="":
             return None
-        new_node=Node(val)
+        root=Node(val)
         print(f"Enter left child of {val}:")
-        new_node.left=self.create()
+        root.left=self.create()
         print(f"Enter right child of {val}:")
-        new_node.right=self.create()
-        return new_node
-    
+        root.right=self.create()
+        return root
+    def preorder(self,root):
+        if root:
+            print(root.data,end=" ")
+            self.preorder(root.left)
+            self.preorder(root.right)
+    def inorder(self,root):
+        if root:
+            self.inorder(root.left)
+            print(root.data,end=" ")
+            self.inorder(root.right)
+    def postorder(self,root):
+        if root:
+            self.postorder(root.left)
+            self.postorder(root.right)
+            print(root.data,end=" ")

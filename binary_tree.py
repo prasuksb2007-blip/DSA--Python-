@@ -29,3 +29,27 @@ class Node:
             self.postorder(root.left)
             self.postorder(root.right)
             print(root.data,end=" ")
+class BinaryTree:
+    def __init__(self):
+        self.root=None
+    def create(self):
+        self.root=Node(None)
+        return self.root.create()
+    def preorder(self,root):
+        Node.preorder(self.root,root)
+    def inorder(self,root):
+        Node.inorder(self.root,root)
+    def postorder(self,root):
+        Node.postorder(self.root,root)
+def main():
+    bt=BinaryTree()
+    print("Create Binary Tree:")
+    root=bt.create()
+    print("\nInorder Traversal:")
+    bt.inorder(root)
+    print("\nPreorder Traversal:")
+    bt.preorder(root)
+    print("\nPostorder Traversal:")
+    bt.postorder(root)
+if __name__=="__main__":
+    main()

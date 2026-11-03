@@ -67,6 +67,11 @@ Upon completing this course, you will be able to:
   - [ ] Prim's & Kruskal's Algorithms *(Upcoming)*
   - [ ] Dijkstra's Algorithm *(Upcoming)*
 
+### Practical Experiments
+The syllabus practicals are available as standalone programs in
+[`Case Study Program/`](./Case%20Study%20Program/), covering stacks, queues,
+linked lists, binary trees, BSTs, DFS, and BFS.
+
 ---
 
 ### Unit III: Advanced Hashing Concepts and Techniques
